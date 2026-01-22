@@ -1,6 +1,6 @@
 # Travel Agency
 
-A travel agency project.
+Intern Project
 
 ## Getting Started
 
