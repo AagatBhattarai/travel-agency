@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency - Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-blue-600 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">TravelHub</h1>
+            <ul class="flex gap-6">
+                <li><a href="index.html" class="hover:underline">Home</a></li>
+                <li><a href="pages/destinations.html" class="hover:underline">Destinations</a></li>
+                <li><a href="pages/booking.html" class="hover:underline">Book Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-center py-20">
+        <h2 class="text-4xl font-bold mb-4">Explore the World</h2>
+        <p class="text-xl text-gray-600 mb-8">Your adventure starts here</p>
+        <button id="exploreBtn" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">
+            Start Exploring
+        </button>
+    </section>
+
+    <!-- Featured Destinations -->
+    <section class="container mx-auto py-12 px-4">
+        <h3 class="text-3xl font-bold mb-8">Popular Destinations</h3>
+        <div id="destinationsList" class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Destinations will be loaded by JS -->
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
