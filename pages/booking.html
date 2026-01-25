@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Now</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-blue-600 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">TravelHub</h1>
+            <ul class="flex gap-6">
+                <li><a href="../index.html" class="hover:underline">Home</a></li>
+                <li><a href="destinations.html" class="hover:underline">Destinations</a></li>
+                <li><a href="vehicles.html" class="hover:underline">Vehicles</a></li>
+                <li><a href="booking.html" class="hover:underline">Book Now</a></li>
+                <li><a href="contact.html" class="hover:underline">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Title -->
+    <section class="bg-blue-600 text-white py-12 text-center">
+        <h2 class="text-4xl font-bold">Book Your Trip</h2>
+        <p class="text-xl mt-2">Fill the form below</p>
+    </section>
+
+    <!-- Booking Form -->
+    <section class="container mx-auto py-12 px-4 max-w-2xl">
+        <div class="bg-white p-8 rounded-lg shadow">
+            <form>
+                <!-- Name -->
+                <div class="mb-4">
+                    <label class="block font-bold mb-2">Your Name</label>
+                    <input type="text" class="w-full border p-2 rounded" placeholder="Enter your name" required>
+                </div>
+
+                <!-- Email -->
+                <div class="mb-4">
+                    <label class="block font-bold mb-2">Email</label>
+                    <input type="email" class="w-full border p-2 rounded" placeholder="Enter your email" required>
+                </div>
+
+                <!-- Phone -->
+                <div class="mb-4">
+                    <label class="block font-bold mb-2">Phone Number</label>
+                    <input type="tel" class="w-full border p-2 rounded" placeholder="Enter your phone" required>
+                </div>
+
+                <!-- Destination -->
+                <div class="mb-4">
+                    <label class="block font-bold mb-2">Select Destination</label>
+                    <select class="w-full border p-2 rounded" required>
+                        <option value="">Choose destination</option>
+                        <option value="mustang">Mustang</option>
+                        <option value="manang">Manang</option>
+                        <option value="langtang">Langtang</option>
+                        <option value="pokhara">Pokhara</option>
+                    </select>
+                </div>
+
+                <!-- Vehicle -->
+                <div class="mb-4">
+                    <label class="block font-bold mb-2">Select Vehicle</label>
+                    <select class="w-full border p-2 rounded" required>
+                        <option value="">Choose vehicle</option>
+                        <option value="jeep">4x4 Jeep</option>
+                        <option value="mahindra">Mahindra Jeep</option>
+                        <option value="hiace">Hiace Van</option>
+                        <option value="traveler">Traveler Van</option>
+                    </select>
+                </div>
+
+                <!-- Number of People -->
+                <div class="mb-4">
+                    <label class="block font-bold mb-2">Number of People</label>
+                    <input type="number" class="w-full border p-2 rounded" placeholder="How many people?" min="1"
+                        required>
+                </div>
+
+                <!-- Date -->
+                <div class="mb-4">
+                    <label class="block font-bold mb-2">Travel Date</label>
+                    <input type="date" class="w-full border p-2 rounded" required>
+                </div>
+
+                <!-- Message -->
+                <div class="mb-4">
+                    <label class="block font-bold mb-2">Additional Message</label>
+                    <textarea class="w-full border p-2 rounded" rows="4" placeholder="Any special requests?"></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="w-full bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">
+                    Submit Booking
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 mt-12">
+        <div class="container mx-auto px-4 text-center">
+            <p class="mb-2">TravelHub &copy; 2026. All rights reserved.</p>
+            <p class="text-gray-400">Lakeside, Pokhara, Nepal | Phone: +977 9800000000</p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -5,41 +5,131 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Agency - Home</title>
-    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="bg-gray-50">
+<body>
     <!-- Navigation -->
-    <nav class="bg-blue-600 text-white p-4">
-        <div class="container mx-auto flex justify-between items-center">
-            <h1 class="text-2xl font-bold">TravelHub</h1>
-            <ul class="flex gap-6">
-                <li><a href="index.html" class="hover:underline">Home</a></li>
-                <li><a href="pages/destinations.html" class="hover:underline">Destinations</a></li>
-                <li><a href="pages/booking.html" class="hover:underline">Book Now</a></li>
+    <nav style="background-color: #2563eb; color: white; padding: 15px;">
+        <div
+            style="max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;">
+            <h1 style="font-size: 24px;">TravelHub</h1>
+            <ul style="list-style: none; display: flex; gap: 30px;">
+                <li><a href="index.html" style="color: white; text-decoration: none;">Home</a></li>
+                <li><a href="pages/destinations.html" style="color: white; text-decoration: none;">Destinations</a></li>
+                <li><a href="pages/vehicles.html" style="color: white; text-decoration: none;">Vehicles</a></li>
+                <li><a href="pages/booking.html" style="color: white; text-decoration: none;">Book Now</a></li>
+                <li><a href="pages/contact.html" style="color: white; text-decoration: none;">Contact</a></li>
             </ul>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero-section text-center py-20">
-        <h2 class="text-4xl font-bold mb-4">Explore the World</h2>
-        <p class="text-xl text-gray-600 mb-8">Your adventure starts here</p>
-        <button id="exploreBtn" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">
-            Start Exploring
-        </button>
-    </section>
-
-    <!-- Featured Destinations -->
-    <section class="container mx-auto py-12 px-4">
-        <h3 class="text-3xl font-bold mb-8">Popular Destinations</h3>
-        <div id="destinationsList" class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <!-- Destinations will be loaded by JS -->
+    <section class="hero-section"
+        style="background-image: url('assets/images/hero-mountains.jpg');">
+        <div class="hero-overlay">
+            <h2>Explore the Mountains of Nepal</h2>
+            <p>Your adventure starts here</p>
+            <a href="pages/booking.html" class="hero-button">Start Exploring</a>
         </div>
     </section>
 
-    <script src="js/main.js"></script>
+    <!-- About Section -->
+    <section style="padding: 50px 20px; text-align: center;">
+        <h3 style="font-size: 28px; margin-bottom: 15px;">Welcome to TravelHub</h3>
+        <p style="color: #666; font-size: 18px; max-width: 800px; margin: 0 auto;">We provide safe and comfortable
+            transportation to explore the beautiful mountains of Nepal. Our jeeps and vans are ready to take you on an
+            unforgettable journey.</p>
+    </section>
+
+    <!-- Featured Destinations -->
+    <section style="background-color: #f5f5f5; padding: 50px 20px;">
+        <h3 style="text-align: center; font-size: 28px; margin-bottom: 30px;">Popular Destinations</h3>
+        <div class="destination-grid">
+
+            <!-- Mustang -->
+            <div class="destination-box">
+                <img src="assets/images/mustang.jpg" alt="Mustang"
+                    style="width: 100%; height: 200px; object-fit: cover;">
+                <div style="padding: 20px;">
+                    <h4 style="font-size: 20px; margin-bottom: 10px;">Mustang</h4>
+                    <p style="color: #666; margin-bottom: 15px;">Ancient kingdom with beautiful mountains</p>
+                    <a href="pages/destinations.html"
+                        style="color: #2563eb; font-weight: bold; text-decoration: none;">Learn More →</a>
+                </div>
+            </div>
+
+            <!-- Manang -->
+            <div class="destination-box">
+                <img src="assets/images/manang.jpg" alt="Manang"
+                    style="width: 100%; height: 200px; object-fit: cover;">
+                <div style="padding: 20px;">
+                    <h4 style="font-size: 20px; margin-bottom: 10px;">Manang</h4>
+                    <p style="color: #666; margin-bottom: 15px;">High altitude valley with stunning views</p>
+                    <a href="pages/destinations.html"
+                        style="color: #2563eb; font-weight: bold; text-decoration: none;">Learn More →</a>
+                </div>
+            </div>
+
+            <!-- Pokhara -->
+            <div class="destination-box">
+                <img src="assets/images/pokhara.jpg" alt="Pokhara"
+                    style="width: 100%; height: 200px; object-fit: cover;">
+                <div style="padding: 20px;">
+                    <h4 style="font-size: 20px; margin-bottom: 10px;">Pokhara</h4>
+                    <p style="color: #666; margin-bottom: 15px;">City of lakes with mountain views</p>
+                    <a href="pages/destinations.html"
+                        style="color: #2563eb; font-weight: bold; text-decoration: none;">Learn More →</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Our Services -->
+    <section style="padding: 50px 20px;">
+        <h3 style="text-align: center; font-size: 28px; margin-bottom: 30px;">Our Services</h3>
+        <div class="services-grid">
+
+            <div class="service-item">
+                <span style="font-size: 40px;">🚙</span>
+                <h4>Comfortable Vehicles</h4>
+                <p>Well-maintained jeeps and vans for your journey</p>
+            </div>
+
+            <div class="service-item">
+                <span style="font-size: 40px;">👨‍✈️</span>
+                <h4>Experienced Drivers</h4>
+                <p>Professional drivers who know the mountain roads</p>
+            </div>
+
+            <div class="service-item">
+                <span style="font-size: 40px;">💰</span>
+                <h4>Best Prices</h4>
+                <p>Affordable rates for all destinations</p>
+            </div>
+
+            <div class="service-item">
+                <span style="font-size: 40px;">🛡️</span>
+                <h4>Safe & Reliable</h4>
+                <p>Your safety is our priority</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section style="background-color: #2563eb; color: white; padding: 60px 20px; text-align: center;">
+        <h3 style="font-size: 28px; margin-bottom: 15px;">Ready for Your Adventure?</h3>
+        <p style="font-size: 18px; margin-bottom: 30px;">Book your trip today and explore Nepal!</p>
+        <a href="pages/booking.html" class="cta-button">Book Now</a>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background-color: #333; color: white; padding: 30px; text-align: center;">
+        <p>TravelHub &copy; 2026. All rights reserved.</p>
+        <p style="color: #999; margin-top: 10px;">Lakeside, Pokhara, Nepal | Phone: +977 9800000000</p>
+    </footer>
 </body>
 
 </html>

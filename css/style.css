@@ -1,4 +1,4 @@
-/* Custom styles for Travel Agency */
+﻿/* Custom styles for Travel Agency */
 
 * {
   margin: 0;
@@ -10,27 +10,123 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Hero section */
 .hero-section {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background-size: cover;
+  background-position: center;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.hero-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 60px 20px;
+}
+
+.hero-section h2 {
   color: white;
+  font-size: 45px;
+  margin-bottom: 15px;
 }
 
-.destination-card {
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
-  cursor: pointer;
+.hero-section p {
+  color: white;
+  font-size: 22px;
+  margin-bottom: 30px;
 }
 
-.destination-card:hover {
+.hero-button {
+  background-color: #2563eb;
+  color: white;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 8px;
+  display: inline-block;
+  font-size: 18px;
+}
+
+.hero-button:hover {
+  background-color: #1d4ed8;
+}
+
+/* Destination grid */
+.destination-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.destination-box {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.destination-box:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* Mobile responsiveness */
+/* Services grid */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.service-item {
+  background-color: white;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.service-item h4 {
+  font-size: 20px;
+  margin: 15px 0 10px 0;
+}
+
+.service-item p {
+  color: #666;
+}
+
+/* CTA button */
+.cta-button {
+  background-color: white;
+  color: #2563eb;
+  padding: 12px 30px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.cta-button:hover {
+  background-color: #f3f4f6;
+}
+
+/* Mobile */
 @media (max-width: 768px) {
+  .destination-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .hero-section h2 {
+    font-size: 30px;
+  }
+  
   nav ul {
     flex-direction: column;
-    gap: 1rem;
+    gap: 10px;
   }
 }
